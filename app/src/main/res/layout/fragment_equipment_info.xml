@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EquipmentInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/equipFragment_tagLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_tagNo"
+                android:layout_weight="4" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/equipFragment_textView_tagNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Tag"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_editText_tagNo"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/equipFragment_specLayout"
+            android:layout_below="@id/equipFragment_tagLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장비구분"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_spec"
+                android:layout_weight="4" />
+            />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_spec"
+                android:layout_weight="1"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipFragment_serialNoLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/equipFragment_specLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S/N"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_serialNo"
+                android:layout_weight="4" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/equipFragment_textView_serialNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="S/N"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_editText_serialNo"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipFragment_modelLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/equipFragment_serialNoLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_modelNo"
+                android:layout_weight="4" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/equipFragment_textView_modelNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Model"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_editText_model"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipFragment_HDDLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/equipFragment_modelLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HDD"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_HDD"
+                android:layout_weight="4" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/equipFragment_textView_HDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="HDD"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_editText_HDD"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipFragment_MemoryLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/equipFragment_HDDLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Memory"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_Memory"
+                android:layout_weight="4" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/equipFragment_textView_Memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Memory"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_editText_Memory"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipFragment_CPULayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/equipFragment_MemoryLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPU"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_CPU"
+                android:layout_weight="4" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/equipFragment_textView_CPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="CPU"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_editText_CPU"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipFragment_OSLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/equipFragment_CPULayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OS"
+                android:textSize="18sp"
+                android:id="@+id/equipFragment_textView_OS"
+                android:layout_weight="4" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_os"
+                android:layout_weight="1"></Spinner>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

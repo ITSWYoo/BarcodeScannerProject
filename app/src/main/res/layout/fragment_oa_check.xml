@@ -1,0 +1,516 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yoo.barcodescannerproject.fragment.OaCheckFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check1"
+                    android:text="점검 1"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check1"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check1_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check1_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check1"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check2"
+                    android:text="점검 2"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check2"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check2_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check2_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check2"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check3"
+                    android:text="점검 3"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check3"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check3_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check3_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check3"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check4"
+                    android:text="점검 4"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check4"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check4_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check4_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check4"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check5"
+                    android:text="점검 5"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check5"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check5_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check5_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check5"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check6"
+                    android:text="점검 6"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check6"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check6_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check6_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check6"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check7"
+                    android:text="점검 7"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check7"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check7_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check7_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check7"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check8"
+                    android:text="점검 8"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check8"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check8_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check8_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check8"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check9"
+                    android:text="점검 9"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check9"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check9_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check9_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check9"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check10"
+                    android:text="점검 10"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check10"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check10_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check10_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check10"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check11"
+                    android:text="점검 11"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check11"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check11_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check11_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check11"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check12"
+                    android:text="점검 12"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check12"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check12_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check12_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check12"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check13"
+                    android:text="점검 13"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check13"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check13_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check13_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check13"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check14"
+                    android:text="점검 14"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check14"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check14_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check14_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/OAcheckFragmnet_layout_check15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/OAcheckFragmnet_layout_check14"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OAcheckFragmnet_textView_check15"
+                    android:text="점검 15"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/OAcheckFragmnet_radioGroup_check15"
+                    android:layout_weight="1">
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check15_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/OAcheckFragmnet_radioButton_check15_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="No" android:checked="true"/>
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

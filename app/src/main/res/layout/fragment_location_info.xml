@@ -1,0 +1,236 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yoo.barcodescannerproject.fragment.LocationInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/locationFragment_install_locationLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사업장 / 설치장소"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_install_location"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_install_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_install_location"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_install_areaLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_install_locationLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설치 지역"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_install_area"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_install_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_install_area"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_detail_locationLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_install_areaLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="상세 위치"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_detail_location"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_detail_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_detail_location"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_sectionLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_detail_locationLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="부문"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_section"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_section"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_divisionLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_sectionLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="실/사업부"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_division"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_division"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_responsibilityLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_divisionLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="담당"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_responsibility"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_responsibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_responsibility"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_teamLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_responsibilityLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="팀"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_team"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_team"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationFragment_partLayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/locationFragment_teamLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="파트"
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_textView_part"
+                android:layout_weight="1.8" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/locationFragment_textView_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/locationFragment_editText_part"
+                android:singleLine="true"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

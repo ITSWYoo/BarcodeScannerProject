@@ -9,8 +9,118 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.yoo.barcodescannerproject.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/checkboxLayout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_tag"
+            android:text="TAG"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_serial"
+            android:text="SERIAL"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_user"
+            android:hint="사용자를 입력해주세요"
+            android:text=""
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barcodeLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxLayout">
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_barcode"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:id="@+id/btn_search"
+            android:textColor="#ffffff"
+            android:background="#228FC4"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/editText_barcode"
+            android:layout_toEndOf="@id/editText_barcode" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="카메라"
+            android:textColor="#ffffff"
+
+            android:background="#228FC4"
+            android:id="@+id/btn_camera"
+            android:layout_toRightOf="@id/btn_search"
+            android:layout_toEndOf="@id/btn_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/barcodeLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제품명"
+                android:textSize="20sp"
+                android:id="@+id/textView_product_name"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TagNo"
+                android:textSize="20sp"
+                android:id="@+id/textView_tagNo_or_serialNo"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView_barcodeList"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Export"
+            android:id="@+id/mainActivity_btn_export"
+            android:layout_gravity="right"
+            android:background="#228FC4"
+            android:textColor="#ffffff"
+            android:layout_weight="4" />
+    </LinearLayout>
+
 </RelativeLayout>

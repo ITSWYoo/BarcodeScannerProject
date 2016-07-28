@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">BarcodeScannerProject</string>
+    <string name="app_name">MOMS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spec">
+        <item>Desktop</item>
+        <item>Notebook</item>
+        <item>Monitor</item>
+        <item>Laser</item>
+        <item>Sub-Notebook</item>
+        <item>고속SCANNER</item>
+        <item>DOT</item>
+        <item>INKJET</item>
+        <item>고속Laser</item>
+        <item>바코드프린터</item>
+        <item>복합기</item>
+        <item>Color LASER</item>
+    </string-array>
+    <string-array name="os">
+        <item></item>
+        <item>WIN 7</item>
+        <item>WinXP</item>
+        <item>리눅스</item>
+        <item>IOS</item>
+        <item>Win2K</item>
+        <item>WIN 10</item>
+    </string-array>
 </resources>

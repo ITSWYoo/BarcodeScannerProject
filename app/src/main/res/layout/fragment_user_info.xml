@@ -1,0 +1,269 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yoo.barcodescannerproject.fragment.UserInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/userInfoFragment_manager_idLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="관리자 사번"
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_manager_id"
+                android:layout_weight="2.5" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/userInfoFragment_textView_manager_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_editText_manager_id"
+                android:singleLine="true"
+
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="검색"
+                android:background="#228FC4"
+                android:textColor="#ffffff"
+                android:id="@+id/userInfoFragment_button_search"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userInfoFragment_manager_nameLayout"
+            android:layout_below="@id/userInfoFragment_manager_idLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="관리자 성명"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_manager_name"
+                android:layout_weight="2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:id="@+id/userInfoFragment_editText_manager_name"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userInfoFragment_manager_phoneLayout"
+            android:layout_below="@id/userInfoFragment_manager_nameLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="관리자 전화번호"
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_manager_phone"
+                android:layout_weight="2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+
+                android:background="@android:color/transparent"
+                android:id="@+id/userInfoFragment_editText_manager_phone"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userInfoFragment_manager_positionLayout"
+            android:layout_below="@id/userInfoFragment_manager_phoneLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="관리자 직급"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_manager_position"
+                android:layout_weight="2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:id="@+id/userInfoFragment_editText_manager_position"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자와 동일"
+            android:id="@+id/userInfoFragment_button_equal"
+
+            android:background="#228FC4"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/userInfoFragment_manager_positionLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/userInfoFragment_button_equal"
+            android:src="@drawable/main_list_line"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/imageView2"
+            android:id="@+id/userInfoFragment_user_idLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용자 사번"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_user_id"
+                android:layout_weight="2.5" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:layout_toRightOf="@id/userInfoFragment_textView_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_editText_user_id"
+                android:singleLine="true"
+
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="검색"
+
+                android:background="#228FC4"
+                android:textColor="#ffffff"
+                android:id="@+id/userInfoFragment_button_user_search"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userInfoFragment_user_nameLayout"
+            android:layout_below="@id/userInfoFragment_user_idLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용자 성명"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_user_name"
+                android:layout_weight="2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:id="@+id/userInfoFragment_editText_user_name"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userInfoFragment_user_phoneLayout"
+            android:layout_below="@id/userInfoFragment_user_nameLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용자 전화번호"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_user_phone"
+                android:layout_weight="2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/userInfoFragment_editText_user_phone"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userInfoFragment_user_positionLayout"
+            android:layout_below="@id/userInfoFragment_user_phoneLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용자 직급"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:id="@+id/userInfoFragment_textView_user_position"
+                android:layout_weight="2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:id="@+id/userInfoFragment_editText_user_position"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
