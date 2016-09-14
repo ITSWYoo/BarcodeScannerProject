@@ -1,0 +1,2 @@
+# BarcodeScannerProject
+Sqlite & Zxing barcode
